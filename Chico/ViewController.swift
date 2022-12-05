@@ -7,13 +7,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewControllerTest: UIViewController {
+    @IBOutlet var viewBackground: UIView!
+    @IBOutlet weak var label: UILabel!
+    let network = DogBreedsApi()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        network.getBreeds()
+        label.text = "Test 1"
+        label.font = .systemFont(ofSize: 40)
     }
-
-
 }
 

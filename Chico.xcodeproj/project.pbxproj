@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84810E7A293E49D300369C3D /* DogBreedsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84810E79293E49D300369C3D /* DogBreedsApi.swift */; };
 		84E7AE7B292D64DD0036A5DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7AE7A292D64DD0036A5DC /* AppDelegate.swift */; };
 		84E7AE7D292D64DD0036A5DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7AE7C292D64DD0036A5DC /* SceneDelegate.swift */; };
 		84E7AE7F292D64DD0036A5DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7AE7E292D64DD0036A5DC /* ViewController.swift */; };
 		84E7AE82292D64DD0036A5DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E7AE80292D64DD0036A5DC /* Main.storyboard */; };
 		84E7AE84292D64DE0036A5DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E7AE83292D64DE0036A5DC /* Assets.xcassets */; };
 		84E7AE87292D64DE0036A5DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E7AE85292D64DE0036A5DC /* LaunchScreen.storyboard */; };
+		84F0C59A29376FB4006214F4 /* DogsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F0C59929376FB4006214F4 /* DogsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84810E79293E49D300369C3D /* DogBreedsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBreedsApi.swift; sourceTree = "<group>"; };
 		84E7AE77292D64DD0036A5DC /* Chico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chico.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E7AE7A292D64DD0036A5DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84E7AE7C292D64DD0036A5DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		84E7AE83292D64DE0036A5DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84E7AE86292D64DE0036A5DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84E7AE88292D64DE0036A5DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F0C59929376FB4006214F4 /* DogsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84810E78293E499600369C3D /* DogApi */ = {
+			isa = PBXGroup;
+			children = (
+				84810E79293E49D300369C3D /* DogBreedsApi.swift */,
+			);
+			path = DogApi;
+			sourceTree = "<group>";
+		};
 		84E7AE6E292D64DD0036A5DC = {
 			isa = PBXGroup;
 			children = (
@@ -63,8 +75,18 @@
 				84E7AE83292D64DE0036A5DC /* Assets.xcassets */,
 				84E7AE85292D64DE0036A5DC /* LaunchScreen.storyboard */,
 				84E7AE88292D64DE0036A5DC /* Info.plist */,
+				84810E78293E499600369C3D /* DogApi */,
+				84F0C59B29376FB9006214F4 /* Model */,
 			);
 			path = Chico;
+			sourceTree = "<group>";
+		};
+		84F0C59B29376FB9006214F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84F0C59929376FB4006214F4 /* DogsModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F0C59A29376FB4006214F4 /* DogsModel.swift in Sources */,
 				84E7AE7F292D64DD0036A5DC /* ViewController.swift in Sources */,
 				84E7AE7B292D64DD0036A5DC /* AppDelegate.swift in Sources */,
+				84810E7A293E49D300369C3D /* DogBreedsApi.swift in Sources */,
 				84E7AE7D292D64DD0036A5DC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
