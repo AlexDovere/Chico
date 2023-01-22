@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BreedsCell" customModule="Chico" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="314"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="labrador" translatesAutoresizingMaskIntoConstraints="NO" id="JBe-sd-lMx">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="314"/>
+                </imageView>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQT-1I-GBl">
+                    <rect key="frame" x="0.0" y="264" width="393" height="50"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ahe-nC-GBf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labrador" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Mv-Zx-ZbO">
+                                <rect key="frame" x="20" y="14.666666666666686" width="69" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="0Mv-Zx-ZbO" firstAttribute="centerY" secondItem="ahe-nC-GBf" secondAttribute="centerY" id="VHP-GM-J9A"/>
+                            <constraint firstItem="0Mv-Zx-ZbO" firstAttribute="leading" secondItem="ahe-nC-GBf" secondAttribute="leading" constant="20" id="YvT-0f-NFJ"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="qiH-r3-0Je"/>
+                    </constraints>
+                    <blurEffect style="regular"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </visualEffectView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="bQT-1I-GBl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="DPM-Uz-cPC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="JBe-sd-lMx" secondAttribute="trailing" id="LF3-rt-asY"/>
+                <constraint firstItem="JBe-sd-lMx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="TfJ-Ka-KM1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bQT-1I-GBl" secondAttribute="trailing" id="Wfd-7v-z3f"/>
+                <constraint firstItem="JBe-sd-lMx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qFH-mF-vuU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="bQT-1I-GBl" secondAttribute="bottom" id="uXl-Pa-Gsx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="JBe-sd-lMx" secondAttribute="bottom" id="uvT-IN-iBj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="20"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="breedLabel" destination="0Mv-Zx-ZbO" id="apR-rG-ifN"/>
+                <outlet property="image" destination="JBe-sd-lMx" id="tdt-8F-oHQ"/>
+            </connections>
+            <point key="canvasLocation" x="-80.152671755725194" y="177.46478873239437"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="labrador" width="800" height="600"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

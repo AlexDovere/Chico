@@ -6,10 +6,13 @@
 //
 
 import UIKit
+import SwiftUI
 
 class FirstViewController: UIViewController {
-    @IBOutlet var viewBackground: UIView!
-//    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak private var collectionView: UICollectionView!
+    private let sectionInsets = UIEdgeInsets(top: 6.0, left: 6.0, bottom: 6.0, right: 6.0)
+    var dataSource: UICollectionViewDiffableDataSource<Sections, Breed>! = nil
+
     let network = DogBreedsApi()
 
     init() {
@@ -25,6 +28,7 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         network.getBreeds()
+        print(network.breeds)
     }
 }
 
